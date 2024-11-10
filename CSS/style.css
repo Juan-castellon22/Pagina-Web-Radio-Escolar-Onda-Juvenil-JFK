@@ -124,6 +124,85 @@ header.abajo .btn_login:hover{
 
 /*Fin nav Estilos*/
 
+/*Ajuestes responsive Nav var y Footer*/
+
+.menu-icon img{
+    width: 30px;
+    height: 30px;
+    border-radius: 2px;
+}
+.menu-icon, #check{
+    display: none;
+}
+
+header.abajo .menu-icon{
+    color: rgb(0, 81, 255);
+}
+
+
+@media (max-width:800px){
+    .checkbtn{
+        display: block;
+    }
+
+    .nav_var ul a{
+        color: black;
+    }
+
+    .nav_var ul a:hover{
+        transition: all 300ms;
+        color: rgb(0, 81, 255);
+    }
+
+    .menu-icon{
+        display: block;
+        position: fixed;
+        top: 50px;
+        right: 50px;
+        color: white;
+        cursor: pointer;
+    }
+    
+
+    .nav_var ul{
+        display: block;
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        background: #fffffff3;
+        width: 100%;
+        top: 130px;
+        height: 100vh;
+        right: 0;
+    }
+
+    .nav_var li{
+        padding: 2rem;
+        text-align: center;
+        margin: 0;
+    }
+
+    .btn_login{
+        margin-right: 130px;
+    }
+
+    .nav_var .socials{
+        display: none;
+    }
+
+    .logo{
+        margin-right: -50px;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+        transition: all 300ms;
+    }
+}
+
+
+/*Fin Ajuestes responsive Nav var y Footter*/
+
 /*Inicio Front Estilos*/
 
 .container_front{
@@ -408,3 +487,84 @@ header.abajo .btn_login:hover{
   }
 
   /*Fin Estilos Section News*/
+
+    /*Inicio Estilos Footer*/
+
+    .footer {
+        position: relative;
+        width: 100%;
+        background-image: radial-gradient(circle at 113.55% 50%, #5dd2f1 0, #41c9ef 25%, #0cc1ed 50%, #00b8eb 75%, #00b0e9 100%);        min-height: 100px;
+        padding: 20px 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      
+      .logo_socials {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin: 10px 5px;
+        flex-wrap: wrap;
+      }
+      
+      .social_logo {
+        list-style: none;
+      }
+      
+      .logo {
+        color: rgb(255, 255, 255);
+        font-size: 32px;
+        display: inline-block;
+        margin: 0 10px;
+        transition: 0.5s;
+      }
+      
+      .logo:hover {
+        transform: translateY(-10px);
+      }
+      
+      .nav_footer {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        align-items: center;
+        margin: 10px 0;
+        flex-wrap: wrap;
+        list-style: none;
+      }
+
+      .menu_logo:hover {
+        color: rgb(231, 231, 231);
+        transition: all 300ms;
+      }
+      
+      .socials_logo {
+        list-style: none;
+      }
+      .menu_logo {
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        display: inline-block;
+        margin: 5px 10px;
+        transition: 0.3s;
+      }
+      
+
+      .text {
+        color: rgb(255, 255, 255);
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font-size: 20px;
+      }
+
+      .text b{
+        color: rgb(255, 255, 255);
+      }
+
+/*Fin Estilos Footer*/
+
+/*____________________________________________*/
