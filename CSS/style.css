@@ -209,7 +209,7 @@ header.abajo .menu-icon{
     padding-top: 100px;
     padding-bottom: 100px;
     background-size: cover;
-    background-image: url(/Images/img_front.png)
+    background-image: url(../Images/img_front.png)
 }
 
 .front{
@@ -331,7 +331,7 @@ header.abajo .menu-icon{
 
 .container_banner{
     padding: 100px 0px;
-    background-image: url(/Images/img_banner.png);
+    background-image: url(../Images/img_banner.png);
     margin-top: 100px;
     background-size: cover;
 }
@@ -482,6 +482,7 @@ header.abajo .menu-icon{
       flex-wrap: wrap;
     }
     .new {
+      width: 350px;
       margin: 15px;
     }
   }
