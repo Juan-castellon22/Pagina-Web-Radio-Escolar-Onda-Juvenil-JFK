@@ -205,43 +205,59 @@ header.abajo .menu-icon{
 
 /*Inicio Slider Estilos*/
 
-.slider{
+.slider {
     width: 100%;
-    height: 643px;
+    height: 100vh;
     overflow: hidden;
-  }
-  .slider ul{
-      display: flex;
-      animation: cambio 20s infinite alternate linear;
-      width: 400%;
-  }
-  .slider li{
-      width: 100%;
-      list-style: none;
-  }
-  .slider img{
-      width: 100%;
-      height: 100%;
-      background-size: cover;
-  }
-  @keyframes cambio{
-      0%{margin-left: 0;}
-      20%{margin-left: 0;}
-      
-      25%{margin-left: -100%;}
-      45%{margin-left: -100%;}
-      
-      50%{margin-left: -200%;}
-      70%{margin-left: -200%;}
-      
-      75%{margin-left: -300%;}
-      100%{margin-left: -300%;}
-  }
-  @media only screen and (min-width:320px) and (max-width:768px){
-  .slider, .slider ul, .slider img{
-      height: 100vh;
-  }
-  }
+}
+
+.slider ul {
+    display: flex;
+    animation: cambio 20s infinite alternate linear;
+    width: 400%;
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+@keyframes cambio {
+    0% { margin-left: 0; }
+    20% { margin-left: 0; }
+    
+    25% { margin-left: -100%; }
+    45% { margin-left: -100%; }
+    
+    50% { margin-left: -200%; }
+    70% { margin-left: -200%; }
+    
+    75% { margin-left: -300%; }
+    100% { margin-left: -300%; }
+}
+
+@media only screen and (max-width: 768px) {
+    .slider {
+        height: auto; /* Ajusta la altura para adaptarse al contenido */
+    }
+
+    .slider img {
+        width: 100%;
+        height: auto; /* Mantiene la imagen proporcionada */
+    }
+
+    /* Ajusta la velocidad de animación para pantallas más pequeñas */
+    .slider ul {
+        animation: cambio 30s infinite alternate linear;
+    }
+}
+
 
 /*Fin Slider Estilos*/
 
@@ -514,6 +530,7 @@ header.abajo .menu-icon{
 
     .card {
         width: 100%;
+        margin: auto;
     }
 }
 
@@ -826,6 +843,7 @@ header.abajo .menu-icon{
 @media (max-width: 768px) {
     .container__gallery {
         grid-template-columns: 1fr 1fr;
+        padding: 0 10px; 
     }
 
     .item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8, .item9, .item10, .item11, .item12, .item13, .item14 {
@@ -838,11 +856,6 @@ header.abajo .menu-icon{
     }
 }
 
-@media (max-width: 1200px) {
-    .item_gallery .overlay .event_text {
-        display: none;
-    }
-}
   /*Fin Estilos gallery Section*/
 
   /*Fin EstilosAbout Section*/
