@@ -183,7 +183,7 @@ header.abajo .menu-icon{
     }
 
     .btn_login{
-        margin-right: 130px;
+        margin-right: 120px;
     }
 
     .nav_var .socials{
@@ -755,7 +755,7 @@ header.abajo .menu-icon{
     text-decoration: none;
     border-radius: 5px;
     font-size: 16px;
-    transition: background-color 0.3s ease;
+    transition: 0.3s ease;
 }
 
 .item_gallery .overlay .btn_gallery:hover {
