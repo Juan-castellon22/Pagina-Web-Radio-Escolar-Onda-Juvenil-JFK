@@ -11,6 +11,12 @@
     user-select: none;
 }
 
+body{
+    background-image: url(../Images/login\ and\ register\ image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /* Fin Estilos generales*/
 
 /* Nav Estilos*/
@@ -21,6 +27,8 @@ header{
     position: fixed;
     z-index: 100;
     transition: 0.7s;
+    z-index: 1000;
+    top: 0;
 }
 
 header.abajo{
@@ -204,3 +212,270 @@ header.abajo .menu-icon{
 /*Fin Ajuestes responsive Nav var y Footter*/
 
 /*Inicio Estilos Login*/
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 180px auto; 
+    padding: 20px;
+    border-radius: 15px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: all 300ms;
+    z-index: 900; 
+    position: relative;
+}
+
+.login {
+    text-align: center;
+    color: #333;
+}
+
+.login h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: rgb(0, 89, 255);
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group label {
+    display: block;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+    transition: box-shadow 300ms;
+}
+
+.form-group input:focus {
+    box-shadow: 0 0 5px rgba(0, 89, 255, 0.8);
+    border-color: rgb(0, 89, 255);
+}
+
+button[type="submit"] {
+    background: rgb(0, 89, 255);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+button[type="submit"]:hover {
+    background: rgb(0, 81, 255);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.comentario-formulario p {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: rgb(29, 29, 29);
+}
+
+.comentario-formulario a {
+    color: rgb(0, 89, 255);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 300ms;
+}
+
+.comentario-formulario a:hover {
+    color: rgb(0, 81, 255);
+    text-decoration: underline;
+}
+
+/*Fin Estilos Login*/
+
+/*Inicio Estilso Reister Form*/
+
+.registro-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 180px auto;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: all 300ms;
+    z-index: 900;
+    position: relative;
+}
+
+.register {
+    text-align: center;
+    color: #333;
+}
+
+.register h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: rgb(0, 89, 255);
+}
+
+#register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group label {
+    display: block;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+    transition: box-shadow 300ms;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    box-shadow: 0 0 5px rgba(0, 89, 255, 0.8);
+    border-color: rgb(0, 89, 255);
+}
+
+button[type="submit"] {
+    background: rgb(0, 89, 255);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+button[type="submit"]:hover {
+    background: rgb(0, 81, 255);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.comentario-formulario p {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: rgb(29, 29, 29);
+}
+
+.comentario-formulario a {
+    color: rgb(0, 89, 255);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 300ms;
+}
+
+.comentario-formulario a:hover {
+    color: rgb(0, 81, 255);
+    text-decoration: underline;
+}
+
+/*Fin Estilos Register Form*/
+
+    /*Inicio Estilos Footer*/
+
+    .footer {
+        position: relative;
+        width: 100%;
+        background-image: radial-gradient(circle at 113.55% 50%, #5dd2f1 0, #41c9ef 25%, #0cc1ed 50%, #00b8eb 75%, #00b0e9 100%);        min-height: 100px;
+        padding: 20px 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      
+      .logo_socials {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin: 10px 5px;
+        flex-wrap: wrap;
+      }
+      
+      .social_logo {
+        list-style: none;
+      }
+      
+      .logo {
+        color: rgb(255, 255, 255);
+        font-size: 32px;
+        display: inline-block;
+        margin: 0 10px;
+        transition: 0.5s;
+      }
+      
+      .logo:hover {
+        transform: translateY(-10px);
+      }
+      
+      .nav_footer {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        align-items: center;
+        margin: 10px 0;
+        flex-wrap: wrap;
+        list-style: none;
+      }
+
+      .menu_logo:hover {
+        color: rgb(231, 231, 231);
+        transition: all 300ms;
+      }
+      
+      .socials_logo {
+        list-style: none;
+      }
+      .menu_logo {
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        display: inline-block;
+        margin: 5px 10px;
+        transition: 0.3s;
+      }
+      
+
+      .text {
+        color: rgb(255, 255, 255);
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font-size: 20px;
+      }
+
+      .text b{
+        color: rgb(255, 255, 255);
+      }
+
+/*Fin Estilos Footer*/

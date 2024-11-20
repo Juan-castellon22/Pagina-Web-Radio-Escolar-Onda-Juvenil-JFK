@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar Sesión</title>
+    <title>Registrarse</title>
     <link rel="stylesheet" href="./CSS/login and register.css">
     <link rel="icon" href="Images/Logo de la radio escolar.png" type="image/x-icon">
     <script src="script.js"></script>
@@ -57,33 +57,52 @@
 
     <!--FIN NAV VAR-->
 
-    <!--INICIO LOGIN-->
+    <!--INICIO REGISTER-->
 
-    <main class="login-container">
-        <section class="login">
-            <h2>Iniciar Sesión</h2>
-            <form id="login-form">
+    <main class="registro-container">
+        <section class="register">
+            <h2>Registro</h2>
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="usuario-nombre">Nombre(s):</label>
+                    <input type="text" id="usuario-nombre" name="nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="usuario-apellido">Apellido(s):</label>
+                    <input type="text" id="usuario-apellido" name="apellido" required>
+                </div>
+
                 <div class="form-group">
                     <label for="usuario-email">Correo Electrónico:</label>
-                    <input type="email" id="usuario-email-login" name="email" required>
+                    <input type="email" id="usuario-email" name="email" required>
                 </div>
-        
+
                 <div class="form-group">
                     <label for="contraseña">Contraseña:</label>
-                    <!-- Utilizar input type password hace que no se vean los dígitos -->
-                    <input type="password" id="contraseña-login" name="password" required>
+                    <input type="password" id="contraseña" name="password" required>
                 </div>
-    
-                <button type="submit">Iniciar Sesión</button>
+
+                <div class="form-group">
+                    <label for="genero">Género:</label>
+                    <select id="genero" name="genero" required>
+                        <option value="" disabled selected>Seleccione su género</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <button type="submit">Registrarse</button>
             </form>
-    
+
             <div class="comentario-formulario">
-                <p>¿No tienes una cuenta? <a href="register.html">Regístrate aquí</a></p>
+                <p>¿Ya tienes una cuenta? Tranquilo, <a href="Login and register.html">Inicia Sesión</a></p>
             </div>
         </section>
     </main>
 
-    <!--FIN LOGIN-->
+    <!--FIN REGISTER-->
 
                 <!--INICIO FOOTER-->
 
