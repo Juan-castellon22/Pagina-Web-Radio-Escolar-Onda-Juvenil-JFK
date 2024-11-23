@@ -4,7 +4,6 @@ window.addEventListener("scroll", function(){
 })
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Register
     const registerForm = document.getElementById('register-form');
     if (registerForm) {
         registerForm.addEventListener('submit', function(event) {
@@ -26,15 +25,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
             localStorage.setItem(email, JSON.stringify(user));
             alert('Registro exitoso. Ahora puedes iniciar sesión.');
-            window.location.href = 'login and register.html'; // Redirige a la página de login
+            window.location.href = 'login and register.html';
         });
     } 
-
-    // Login form
+    
     const loginForm = document.getElementById('login-form');
     if (loginForm) {
         loginForm.addEventListener('submit', function(event) {
-            event.preventDefault(); // Evita que el formulario se envíe de la manera tradicional
+            event.preventDefault(); 
 
             const email = document.getElementById('usuario-email-login').value;
             const password = document.getElementById('contraseña-login').value;

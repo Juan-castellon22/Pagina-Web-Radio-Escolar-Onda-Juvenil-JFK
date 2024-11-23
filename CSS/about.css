@@ -244,15 +244,14 @@ header.abajo .menu-icon{
 
 @media only screen and (max-width: 768px) {
     .slider {
-        height: auto; /* Ajusta la altura para adaptarse al contenido */
+        height: auto;
     }
 
     .slider img {
         width: 100%;
-        height: auto; /* Mantiene la imagen proporcionada */
+        height: auto;
     }
 
-    /* Ajusta la velocidad de animación para pantallas más pequeñas */
     .slider ul {
         animation: cambio 30s infinite alternate linear;
     }

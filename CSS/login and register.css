@@ -399,6 +399,12 @@ button[type="submit"]:hover {
     text-decoration: underline;
 }
 
+@media (max-width:800px){
+    .registro-container{
+        max-width: 95%;
+    }
+}
+
 /*Fin Estilos Register Form*/
 
     /*Inicio Estilos Footer*/

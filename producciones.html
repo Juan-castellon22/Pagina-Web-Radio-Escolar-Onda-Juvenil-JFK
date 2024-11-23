@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestras Producciones</title>
+    <link rel="stylesheet" href="./CSS/producciones.css">
+    <link rel="icon" href="Images/Logo de la radio escolar.png" type="image/x-icon">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/7bf157e8c6.js" crossorigin="anonymous"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+
+        <!--INICIO NAV VAR-->
+
+    <header>
+        <div class="container_header">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Images/Logo de la radio escolar.png" alt="Logo De La Radio Escolar Onda Juvenil JFK">
+                </a>
+            </div>
+            <div class="nav_var">
+                <nav>
+                    <input type="checkbox" id="check">    
+                    <label for="check" class="checkbtn">
+                        <i class="menu-icon"><i class="menu-icon"><i class="fa-solid fa-bars"></i></i></i>
+                    </label>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="about.html">Sobre Nosotros</a></li>
+                        <li><a href="producciones.html">Nuestras Producciones</a></li>
+                        <li><a href="https://www.instagram.com/reondajuveniljfk/">Contactanos</a></li>
+                    </ul>
+                </nav>
+                <a href="Login and register.html" class="btn_login">Iniciar Sesión</a>
+
+                <div class="socials">
+                    <a href="https://www.youtube.com/@radioescolarondajuveniljfk8795">
+                        <img src="Images/youtube icon.png" alt="">
+                    </a>
+                    <a href="https://es-la.facebook.com/OndaJuvenilJFK/">
+                        <img src="Images/Facebook Icon.png" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/reondajuveniljfk/">
+                        <img src="Images/instagram icon.png" alt="">
+                    </a>
+                    <a href="https://www.tiktok.com/@reondajuveniljfk">
+                        <img src="Images/Tik Tok icon.png" alt="">  
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--FIN NAV VAR-->
+
+     <!--INICIO VIDEO SECTION-->
+
+        <main>
+        <div class="mainContent">
+            <div class="videoOverlay"></div>
+            <video autoplay loop muted class="video" src="./Images/Producciones Video.mp4"></video>
+            <div class="overlayContent">
+                <h1 class="title">Creatividad en Cada Nota</h1>
+                <p class="description">Explora nuestras producciones y sumérgete en el talento y la pasión que impulsa a La radio Escolar Onda Juvenil JFK. Desde programas innovadores hasta melodías únicas, cada proyecto cuenta una historia que conecta a nuestra comunidad estudiantil con el mundo.</p>
+            </div>
+        </div>
+
+        <div class="container_productions">
+        <div class="productions">
+            <div class="title_history">
+                <p>Conoce Nuestras</p>
+                <h1>Producciones</h1>
+            </div>
+            <div class="section_productions">
+                <div class="video_container">
+                    <div class="main_video">
+                        <iframe class="active_video" src="https://www.youtube.com/embed/zsfmAgbaG3o?si=AMoHrGqxH1tBWFOt" 
+                            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="thumbnails">
+                        <iframe class="thumbnail" 
+                            src="https://www.youtube.com/embed/t0jvRDPTiBE?si=jkklJGb6DFG3Hppw" 
+                            frameborder="0" allow="autoplay; encrypted-media" onclick="changeVideo(this)">
+                        </iframe>
+                        <iframe class="thumbnail" 
+                            src="https://www.youtube.com/embed/4AHTLA6dCd0?si=7uWVePUBV2rnaw9a" 
+                            frameborder="0" allow="autoplay; encrypted-media" onclick="changeVideo(this)">
+                        </iframe>
+                        <iframe class="thumbnail" 
+                            src="https://www.youtube.com/embed/wUv-CUWt_5c?si=zhsJXKl1sFmTSQe9" 
+                            frameborder="0" allow="autoplay; encrypted-media" onclick="changeVideo(this)">
+                        </iframe>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        </main>
+
+        <!--FIN VIDEO SECTION-->
+
+        <!--INICIO FOOTER-->
+
+        <footer class="footer">
+            <ul class="logo_socials">
+              <li class="social_logo">
+                <a href="https://www.youtube.com/@radioescolarondajuveniljfk8795" class="logo">
+                  <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+              </li>
+              <li class="social_logo">
+                <a href="https://www.instagram.com/reondajuveniljfk/" class="logo">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+              <li class="social_logo">
+                <a href="https://es-la.facebook.com/OndaJuvenilJFK/" class="logo">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+              <li class="social_logo">
+                <a href="https://www.tiktok.com/@reondajuveniljfk" class="logo">
+                  <ion-icon name="logo-tiktok"></ion-icon>
+                </a>
+              </li>
+            </ul>
+            <ul class="nav_footer">
+              <li class="nav_li">
+                <a href="index.html" class="menu_logo"> Inicio </a>
+              </li>
+              <li class="nav_li">
+                <a href="about.html" class="menu_logo"> Sobre Nosotros </a>
+              </li>
+              <li class="nav_li">
+                <a href="produccion.html" class="menu_logo"> Nuestras Producciones </a>
+              </li>
+              <li class="nav_li">
+                <a href="https://www.instagram.com/reondajuveniljfk/" class="menu_logo"> Contactanos </a>
+              </li>
+            </ul>
+            <p class="text">2024 | Todos los derechos reservados © <a href="https://www.instagram.com/juan_castellon25/"><b>Juan Castellón</b></a></p>
+          </footer>
+
+         <!--FIN FOOTER-->
+</body>
+</html>
